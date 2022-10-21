@@ -1,0 +1,13 @@
+for i in `ls -l|tr -s " "|cut -d " "-f8|cut -c1,c2
+do
+  #t= `$i|cut -d ":" -f1
+  echo $i
+  if[$i -ge 00 -a $i -lt 12]
+  then
+      echo "good morning"
+      elif [ $i -ge 12 -a $i -le 18 ]
+      then
+          echo"good afternoon'
+          else
+            'good night'
+fi            
